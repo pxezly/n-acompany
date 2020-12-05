@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}"
+      xmlns:th="https://www.thymeleaf.org">
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Icon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div layout:fragment="content" class="container">
+
+    <form action="#" th:action="@{/music}" method="POST">
+
+        <!-- Home -->
+        <section class="home">
+            <div class="home-content">
+                <div class="row">
+
+                    <div class="col-lg-6 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+
+                        <h1 class="display-4 my-font" th:text="${greeting}">Welcome, </h1>
+
+                        <div class="cover">
+                            <figure><img src="images/cover.gif"></figure>
+                        </div>
+                        If you don't have an account, please  <a th:href="@{/customer}">Register</a>
+
+                        <form action="#" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="1000" role="form">
+
+                            <!a class="form-group form-button">
+                                    <input type="submit"  name="home" id="home" class="form-submit" value="Listen Now!"/>
+                            </a>
+
+                                <br>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </form>
+</div>
+
+

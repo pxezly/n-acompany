@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}"
+      xmlns:th="https://www.thymeleaf.org">
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div layout:fragment="content" class="container">
+    <div class="col-lg-6 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+        <h1 class="mb-4"><strong>Let's listen music</strong></h1>
+        <form action="http://www.youtube.com/results" method="get" target="_blank" >
+            <div class="form-group">
+                <input name="search_query" type="text" maxlength="128" placeholder="youtube"/>
+            </div>
+            <div class="form-group">
+                <select name="search_type">
+                    <option value="">Videos</option>
+                    <option value="search_users">Channels</option>
+                </select>
+            </div>
+            <div class="col-lg-12 mx-auto col-12">
+                <input type="submit" value="Search" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-lg-12 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+        <h1 class="mb-4"><strong>Recommended Music</strong></h1>
+            <p>บวบ - GAVIN.D feat. YOUNGOHM, FIIXD, โอมงกะลงปง แทนบ๋อย</p>
+    </div>
+    <center>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LzoxkrUO8O8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <div class="col-lg-12 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+        <p>WAP - Cardi B feat. Megan Thee Stallion</p>
+    </div>
+    <center>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hsm4poTWjMs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <div class="col-lg-12 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+        <p>มาเฟียสเปน - YOUNGOHM ft. YOUNGGU, DIAMOND MQT & PEE CLOCK</p>
+    </div>
+    <center>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RtAuX0sncZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <div class="col-lg-12 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+        <p>รองช้ำ - DTK BOY BAND</p>
+    </div>
+    <center>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Poy_ivO3naQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <div class="col-lg-12 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+        <p>THRIFT SHOP - MACKLEMORE & RYAN LEWIS FEAT. WANZ</p>
+    </div>
+    <center>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QK8mJJJvaes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </center>
+
+    <footer class="site-footer">
+        <div class="col-lg-4 mx-lg-auto text-center col-md-12 col-12" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text"><font style="font-size:10px;"><br><br>Copyright &copy; 2020 N/A Company</font></p>
+        </div>
+    </footer>
+
+</div>
+
+
+
+</html>
